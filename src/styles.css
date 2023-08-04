@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Caveat&family=Cinzel&family=Monoton&family=Playfair+Display&family=Smokum&family=Uncial+Antiqua&display=swap');
+
+body{
+    background: #002a38; 
+    background: linear-gradient( #113d70,  #1069ce); 
+    font-family: cinzel;
+}
+::placeholder{
+    font-family: cinzel;
+}
