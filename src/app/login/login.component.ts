@@ -9,15 +9,12 @@ export class LoginComponent {
   data="HAPPY BANKING WITH US"
   data2="Account Number"
 
-  login(){
+  login(a:any,b:any){
+    console.log(a.value);
+    console.log(b.value);
+    
+    
     alert("button clicked")
   }
- accNum(event:any){
-  console.log(event.target.value)
-  
- }
- pass(event:any){
-  console.log(event.target.value);
-  
- }
+ 
 }
