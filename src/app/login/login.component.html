@@ -73,19 +73,23 @@
                 <input
                 class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
                 type="text"
+                id="ac"
+                name="accontnumber"
                 [placeholder]="data2"
-               #acno
+                [(ngModel)]="acno"
               /><br>
 
              
               <input
                 class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
                 type="password"
+                id="ps"
+                name="password"
                 placeholder="Password"
-                #psw
+                [(ngModel)]="psw"
               />
               
-              <button (click)="login(acno,psw)"
+              <button (click)="login()"
                 class="mt-5 tracking-wide font-semibold bg-indigo-500 text-gray-100 w-full py-4 rounded-lg hover:bg-indigo-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
               >
                 <svg
@@ -104,8 +108,8 @@
                   Login
                 </span>
               </button><br>
-              <a style="margin-top: 20px;" href="">Forgot Password ?</a> 
-              <a href="" style="margin-left: 10px;">Create Account</a>
+              <a style="margin-top: 20px; " href="">Forgot Password ?</a> 
+              <a routerLink="signup" style="margin-left: 10px;">Create Account</a>
               <p class="mt-6 text-xs text-gray-600 text-center">
                 I agree the
                 <a href="#" class="border-b border-gray-500 border-dotted">

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,17 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   data="HAPPY BANKING WITH US"
   data2="Account Number"
+  acno:any
+  psw:any
+  constructor(private rout:Router) { }
 
-  login(a:any,b:any){
-    console.log(a.value);
-    console.log(b.value);
+  login(){
+    console.log(this.acno);
+    console.log(this.psw);
     
-    
-    alert("button clicked")
+    this.rout.navigateByUrl("home")
+    // alert("button clicked")
+
   }
  
 }
